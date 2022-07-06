@@ -1,0 +1,111 @@
+@import "colors";
+
+* {
+  z-index: 1;
+}
+
+li {
+  font-size: 14pt;
+}
+
+.title {
+  color: $primary-color;
+  font-weight: 700;
+}
+
+.bg {
+  &-image {
+    background-image: white;
+    background-size: cover;
+  }
+
+  &-blur {
+    backdrop-filter: blur(30px);
+    background-color: rgba(255,255,255, 0.5);
+  }
+
+  &-green {
+    background-color: #00b894;
+  }
+
+  &-blue {
+    background-color: #00cec9;
+  }
+
+  &-orange {
+    background-color: #ff7675;
+  }
+
+  &-purple {
+    background-color: #6c5ce7;
+  }
+
+  &-dark-gray {
+    background-color: #3d3d3d;
+  }
+
+  &-white {
+    background-color: #fff;
+  }
+
+  &-button-hover {
+    background-color: $primary-color;
+    color: $dark-gray;
+  }
+  &-prices{
+    background-image: url("./assets/images/bg-section-4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &-registry{
+    background-image: url("./assets/images/bg-registry.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+}
+
+.image {
+  &-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: -1;
+  }
+}
+
+.color {
+  &-white {
+    color: white;
+  }
+}
+
+.border-text {
+  &-black {
+    /* 1 pixel black shadow to left, top, right and bottom */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z--1 {
+  z-index: -1;
+}
+
+.z--2 {
+  z-index: -2;
+}

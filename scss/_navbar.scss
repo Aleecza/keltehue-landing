@@ -1,0 +1,32 @@
+@import "colors";
+
+.navbar{
+	top: 0;
+  width: 100%;
+	transition: top 0.3s;
+  position: absolute;
+  z-index: 10;
+}
+
+.navbar-logo {
+  width: 40%;
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.navbar-nav {
+  padding: 2em;
+}
+
+.nav-item {
+  color: $primary-color !important;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $dark-gray !important;
+  }
+}
